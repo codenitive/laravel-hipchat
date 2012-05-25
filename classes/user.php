@@ -11,7 +11,7 @@ class User
 	 * @access  public
 	 * @return  Hybrid\Curl
 	 */
-	public static function list()
+	public static function all()
 	{
 		$config = Config::get('hipchat::api', '');
 
@@ -127,7 +127,7 @@ class User
 		return static::call('POST https://api.hipchat.com/v1/users/update', $data);
 	}
 
-	protected static call($url, $data)
+	protected static function call($url, $data)
 	{
 		$request = Curl::make($url, $data);
 		$request->option(CURLOPT_SSL_VERIFYPEER, Config::get('hipchat::api.verify_ssl', 1));
