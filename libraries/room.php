@@ -144,7 +144,16 @@ class Room
 
 		return static::call('POST https://api.hipchat.com/v1/rooms/message', $data);
 	}
-
+	
+	/**
+	 * Send a curl request to Hipchat
+	 *
+	 * @static
+	 * @access  protected
+	 * @param   string      $url
+	 * @param   array       $data
+	 * @return  Hybrid\Curl
+	 */
 	protected static function call($url, $data)
 	{
 		$request = Curl::make($url, $data);
