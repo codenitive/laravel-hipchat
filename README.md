@@ -13,8 +13,6 @@ Installation with Laravel Artisan
 	
 ### Dependencies
 
-Hipchat API Bundle for Laravel:
-
 * [Laravel Hybrid Bundle](http://bundles.laravel.com/bundle/hybrid)
 
 ## Contributors
