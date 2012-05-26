@@ -1,8 +1,7 @@
 <?php
 
-Autoloader::map(array(
-	'Hipchat\\Room' => Bundle::path('hipchat').'classes/room'.EXT,
-	'Hipchat\\User' => Bundle::path('hipchat').'classes/user'.EXT,
+Autoloader::directories(array(
+	Bundle::path('hipchat').'libraries',
 ));
 
 // Should load Hybrid bundle if it's not registered
