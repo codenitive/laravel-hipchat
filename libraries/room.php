@@ -138,6 +138,7 @@ class Room
 			'room_id'    => $room_id,
 			'message'    => $message,
 			'from'       => $from,
+			'color'      => $color,
 			'format'     => 'json',
 			'notify'     => 1,
 		);
